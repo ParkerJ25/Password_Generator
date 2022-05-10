@@ -7,6 +7,9 @@ while 1:
     main
     print("Please note that password with length lower than 8 is not recommended for security reasons!")
     password_len = int(input("What length would you like your password to be :"))
+    print("Would you like special characters? yes/no")
+    if(input() == "yes"):
+        chars = "abcdefghijklmnopqrstuvwyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
     if (password_len < 8):
         print("The requested length is lower than 8, do you wish to continue anyway? yes/no")
         if (input() == "yes"):
